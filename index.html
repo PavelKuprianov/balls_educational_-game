@@ -11,15 +11,35 @@
 
 <body>
   <section class="field">
-    <canvas id="crown">Браузер не поддерживает канвас</canvas>
+    <div class="canvas">
+      <canvas id="crown">Браузер не поддерживает канвас</canvas>
+    </div>
     <div class="container">
       <h1 class="title">Настройте игру</h1>
       <form class="form">
         <h2 class="form__title">Выберите варианты расцветок шаров</h2>
-        <p class="label"><input class="radio" type="radio" name="radio" id="random" checked>Случайный цвет</p>
-        <p class="label"><input class="radio" type="radio" name="radio" id="fix">Фиксированные цвета</p>
+        <p class="label"><input class="radio interactive" type="radio" name="radio" id="random" checked>Случайный цвет
+        </p>
+        <p class="label"><input class="radio interactive" type="radio" name="radio" id="fix">Фиксированные цвета</p>
+        <label for="red"><input class="checkbox interactive" type="checkbox" id="red" value="red"
+            disabled>Красный</label>
+        <label for="green"><input class="checkbox interactive" type="checkbox" id="green" value="green"
+            disabled>Зелёный</label>
+        <label for="blue"><input class="checkbox interactive" type="checkbox" id="blue" value="blue"
+            disabled>Синий</label>
+
+        <h2 class="form__title">Выберите скорость надувания шаров</h2>
+        <p class="label"><input class="radioSpeed interactive" type="radio" name="speed" id="max">Большая</p>
+        <p class="label"><input class="radioSpeed interactive" type="radio" name="speed" id="normal" checked>Средняя</p>
+        <p class="label"><input class="radioSpeed interactive" type="radio" name="speed" id="min">Низкая</p>
+
       </form>
-      <button id="btnStart" class="btn" type="button">Начать игру</button>
+      <div class="button-block">
+        <button id="btnStart" class="btn" type="button ">Начать игру</button>
+        <button id="btnStop" class="btn" type="button ">Завершить игру</button>
+        <button id="btnClear" class="btn" type="button">Очистить поле</button>
+      </div>
+
     </div>
   </section>
 
