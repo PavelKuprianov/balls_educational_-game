@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  position: relative;
 }
 
 canvas {
@@ -9,5 +10,20 @@ canvas {
 }
 
 a {
-  color: rgba(228, 222, 222, 0.8);
+  color: rgba(248, 7, 7, 0.8);
+  color: magenta;
+}
+
+.field {
+  display: flex;
+  gap: 30px;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  cursor: pointer;
 }
